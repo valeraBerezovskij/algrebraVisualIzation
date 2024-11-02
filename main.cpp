@@ -6,7 +6,7 @@ int main() {
     auto corsys = ShapeCreator::createCoordinateSystem(renderer.getWindow());
     renderer.addShape(std::move(corsys));
 
-    auto vector = ShapeCreator::createVector(Point(0,2), Point(10,10), renderer.getWindowCenter());
+    auto vector = ShapeCreator::createVector(Point(-6,2), Point(-8,-2), renderer.getWindowCenter(), sf::Color::Black);
     renderer.addShape(std::move(vector));
 
     renderer.render();
